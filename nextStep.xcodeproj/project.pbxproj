@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E3B18411BF779A30036259E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B18401BF779A30036259E /* Podfile */; };
 		8E7B92F61BF70D45007AC912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B92F51BF70D45007AC912 /* AppDelegate.swift */; };
 		8E7B92F81BF70D45007AC912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B92F71BF70D45007AC912 /* ViewController.swift */; };
 		8E7B92FB1BF70D45007AC912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7B92F91BF70D45007AC912 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		8E7B93001BF70D45007AC912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7B92FE1BF70D45007AC912 /* LaunchScreen.storyboard */; };
 		8E7B930B1BF70D46007AC912 /* nextStepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B930A1BF70D46007AC912 /* nextStepTests.swift */; };
 		8E7B93161BF70D46007AC912 /* nextStepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B93151BF70D46007AC912 /* nextStepUITests.swift */; };
+		A330DBC115F6DD1DEA8D1480 /* libPods-nextStep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FABA7F817FD35184FC58B4CF /* libPods-nextStep.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19341595CA7F3E78AED948FF /* Pods-nextStep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nextStep.release.xcconfig"; path = "Pods/Target Support Files/Pods-nextStep/Pods-nextStep.release.xcconfig"; sourceTree = "<group>"; };
+		8E3B18401BF779A30036259E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8E79F64D1BF785FC003697A8 /* nextStep-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nextStep-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E7B92F21BF70D45007AC912 /* nextStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nextStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7B92F51BF70D45007AC912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7B92F71BF70D45007AC912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,8 @@
 		8E7B93111BF70D46007AC912 /* nextStepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nextStepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7B93151BF70D46007AC912 /* nextStepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nextStepUITests.swift; sourceTree = "<group>"; };
 		8E7B93171BF70D46007AC912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF60FAE130B9229CDC63883A /* Pods-nextStep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nextStep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nextStep/Pods-nextStep.debug.xcconfig"; sourceTree = "<group>"; };
+		FABA7F817FD35184FC58B4CF /* libPods-nextStep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nextStep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A330DBC115F6DD1DEA8D1480 /* libPods-nextStep.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +82,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		563820733F007790B2054761 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF60FAE130B9229CDC63883A /* Pods-nextStep.debug.xcconfig */,
+				19341595CA7F3E78AED948FF /* Pods-nextStep.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8E7B92E91BF70D45007AC912 = {
 			isa = PBXGroup;
 			children = (
+				8E3B18401BF779A30036259E /* Podfile */,
 				8E7B92F41BF70D45007AC912 /* nextStep */,
 				8E7B93091BF70D46007AC912 /* nextStepTests */,
 				8E7B93141BF70D46007AC912 /* nextStepUITests */,
 				8E7B92F31BF70D45007AC912 /* Products */,
+				563820733F007790B2054761 /* Pods */,
+				EF9864B4BF91C69158D3AA83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +123,7 @@
 				8E7B92FC1BF70D45007AC912 /* Assets.xcassets */,
 				8E7B92FE1BF70D45007AC912 /* LaunchScreen.storyboard */,
 				8E7B93011BF70D45007AC912 /* Info.plist */,
+				8E79F64D1BF785FC003697A8 /* nextStep-Bridging-Header.h */,
 			);
 			path = nextStep;
 			sourceTree = "<group>";
@@ -125,6 +146,14 @@
 			path = nextStepUITests;
 			sourceTree = "<group>";
 		};
+		EF9864B4BF91C69158D3AA83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FABA7F817FD35184FC58B4CF /* libPods-nextStep.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E7B931A1BF70D46007AC912 /* Build configuration list for PBXNativeTarget "nextStep" */;
 			buildPhases = (
+				CEBB020141D5BB82AD0885B9 /* Check Pods Manifest.lock */,
 				8E7B92EE1BF70D45007AC912 /* Sources */,
 				8E7B92EF1BF70D45007AC912 /* Frameworks */,
 				8E7B92F01BF70D45007AC912 /* Resources */,
+				7A4E8D7553730E0706C3A8CB /* Embed Pods Frameworks */,
+				36B57E4ADE1F669BC6FEA62C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +263,7 @@
 			files = (
 				8E7B93001BF70D45007AC912 /* LaunchScreen.storyboard in Resources */,
 				8E7B92FD1BF70D45007AC912 /* Assets.xcassets in Resources */,
+				8E3B18411BF779A30036259E /* Podfile in Resources */,
 				8E7B92FB1BF70D45007AC912 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36B57E4ADE1F669BC6FEA62C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nextStep/Pods-nextStep-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4E8D7553730E0706C3A8CB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nextStep/Pods-nextStep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEBB020141D5BB82AD0885B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E7B92EE1BF70D45007AC912 /* Sources */ = {
@@ -395,23 +476,32 @@
 		};
 		8E7B931B1BF70D46007AC912 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF60FAE130B9229CDC63883A /* Pods-nextStep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = nextStep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.limbala.nextStep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nextStep/nextStep-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8E7B931C1BF70D46007AC912 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19341595CA7F3E78AED948FF /* Pods-nextStep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = nextStep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.limbala.nextStep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nextStep/nextStep-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +572,7 @@
 				8E7B931C1BF70D46007AC912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E7B931D1BF70D46007AC912 /* Build configuration list for PBXNativeTarget "nextStepTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +581,7 @@
 				8E7B931F1BF70D46007AC912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E7B93201BF70D46007AC912 /* Build configuration list for PBXNativeTarget "nextStepUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +590,7 @@
 				8E7B93221BF70D46007AC912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
